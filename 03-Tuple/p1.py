@@ -16,4 +16,3 @@ print(t4, type(t4))  # both t3 and t4 statements are same
 
 t5 = tuple([10, 20, 30, 40])
 print(t5, type(t5))
-
