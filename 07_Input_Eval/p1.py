@@ -73,3 +73,12 @@ print(t1, type(t1))
 # Task 8: Set
 s1 = {input('0 Index: '),input('1 Index: '),int(input("2nd Index: ")),input("3rd Index: ")}
 print(s1, type(s1))
+
+# Task 9: Dictionary
+
+D1 = {
+    'a1':input("Enter First value: "),
+    'b1':input("Ënter Second value: ")
+
+}
+print(D1, type(D1))
