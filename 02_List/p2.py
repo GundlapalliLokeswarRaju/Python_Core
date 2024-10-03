@@ -22,3 +22,12 @@ l4 = [10, 20, 3, 40, 50]
 #     i1  i2  i3  i4  i5
 l4.remove(3)
 print(l4)  # [10, 20, 40, 50]
+
+
+
+lis = [int(input("0 index: ")),int(input("1 index: ")),int(input("2 index: ")),int(input("3 index: ")),int(input("4 index: ")),int(input("5 index: ")),int(input("6 index: ")),int(input("7 index: ")),int(input("8 index: ")),int(input("9 index: ")),int(input("10 index: ")),]
+print(lis)
+lis.pop(5)
+print(lis)
+
+
