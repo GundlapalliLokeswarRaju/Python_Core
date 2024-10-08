@@ -5,17 +5,17 @@
 # why we use functions?
 # to store data we have variables, functions, methods, constructors, collections
 #
-# product_id = 101
-# product_name = "Apple"
-# product_price = 10000
-#
-# print(product_id, product_name, product_price)
-#
-# product_id = 102
-# product_name = "Banana"
-# product_price = 1000
-#
-# print(product_id, product_name, product_price)
+product_id = 101
+product_name = "Apple"
+product_price = 10000
+
+print(product_id, product_name, product_price)
+
+product_id = 102
+product_name = "Banana"
+product_price = 1000
+
+print(product_id, product_name, product_price)
 
 # to declare function in python use def keyword
 

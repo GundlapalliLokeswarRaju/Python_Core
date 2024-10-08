@@ -7,6 +7,20 @@ for i in a:
         b.append(i)
 print(b)
 
+
+# Write a python program for print 4 multiples in given list
+def mul():
+    a = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+    b = []
+    for i in a:
+        if i%4 == 0:
+            b.append(i)
+    return print(b)
+
+mul() # [20, 40, 60, 80, 100]
+
+
+
 #
 # 2. print prime numbers in given list
 num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 21, 89, 12, 32, 43, 86, 223, 232,123, 553,2424]
@@ -26,6 +40,7 @@ for a in num:
         new_prime.append(a)
 print("Prime_List = ",new_prime)
 print("Not_Prime = ",not_prime)
+
 
 # 3. check given number is prime or not
 count = 0

@@ -12,13 +12,14 @@ from holoviews.core.dimension import redim
 # 1. create a function with zero arguments
 def d1():
     print("Hello World")
-d1()
-d1()
-d1()
+d1() # Hello World
+d1() # Hello World
+d1() # Hello World
 
 # 2. create a function with arguments
 def d2(a, b):
     print(a, b)
+
 
 d2(10, 20)
 d2(100, 43)
