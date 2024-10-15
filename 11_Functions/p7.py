@@ -67,50 +67,99 @@
 # print(d2())
 
 # Decorator to decide between login and logout based on the user input
+# def d1(options):
+#     def d2(func):
+#         def d3():
+#             if options == 'login':
+#                 return login()
+#             elif options == 'logout':
+#                 return logout()
+#             else:
+#                 return "Invalid action"
+#         return d3
+#     return d2
+#
+# # Login function
+# def login():
+#     email = input("Enter your email: ")
+#     password = input("Enter your password: ")
+#     if email == 'lokeshgundlapalli@gmail.com' and password == 'lokeshraju':
+#         return "Login Successful"
+#     else:
+#         return "Incorrect email or password"
+#
+# # Logout function
+# def logout():
+#     return "Logout Successful"
+#
+#
+# options = input("Do you want to 'login' or 'logout'? ").lower()
+#
+# @d1(options)
+# def d5():
+#     pass  # This function doesn't need to do anything, as the logic is in the decorator
+#
+# # Calling the decorated function to perform the action
+# print(d5())
+
+# signin and sign up
+
 def d1(options):
     def d2(func):
         def d3():
-            if options == 'login':
-                return login()
-            elif options == 'logout':
-                return logout()
+            if options == 'sign_in':
+                return sign_in()
+            elif options == 'sign_up':
+                return sign_up()
+            elif options == 'forget_password':
+                return forget_password()
             else:
-                return "Invalid action"
+                return 'invalid selection'
+
         return d3
     return d2
-
-# Login function
-def login():
-    email = input("Enter your email: ")
-    password = input("Enter your password: ")
-    if email == 'lokeshgundlapalli@gmail.com' and password == 'lokeshraju':
-        return "Login Successful"
+def sign_in():
+    user_name = input("User Name: ")
+    password = str(input("Enter Password: "))
+    if user_name == 'lokeshraju' and password == 8374705188:
+        return "Login Successfully"
     else:
-        return "Incorrect email or password"
+        return 'Incorrect Username or Password'
 
-# Logout function
-def logout():
-    return "Logout Successful"
+def sign_up():
+    print("Create a New Account")
+    print("Enter Your details")
+    Name = input("User_Name: ")
+    Email = input("Email: ")
+    phone = int(input("Contact: "))
+    pas1 = str(input("Password: "))
+    pas2 = str(input("Re-enter password: "))
+    if pas1 == pas2:
+        return "Account create Successfully"
+    else:
+        return sign_in()
+def forget_password():
+    ema = input("Enter Mail: ")
+
+    if ema == 'lokeshgundlapalli@gmail.com':
+        print('otp sent successfully')
+        return otp()
+
+    else:
+        return forget_password()
+def otp():
+    otp = 516501
+    ot = int(input("Enter your otp: "))
+    if ot == 516501:
+        return 'Login Successfully'
+    else:
+        return 'Invalid One Time Password'
 
 
-options = input("Do you want to 'login' or 'logout'? ").lower()
-
+options = input("do you want Sign_in or Sign_up or forget_password : ").lower()
 @d1(options)
 def d5():
-    pass  # This function doesn't need to do anything, as the logic is in the decorator
+    pass
 
-# Calling the decorated function to perform the action
 print(d5())
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -162,8 +162,8 @@
 # print(new) # [10, 30, 60, 100, 150, 210, 280]
 
 # 16. sum of number digits in list
-
 a = [12, 13, 15]
+
 b=str(a)
 c = []
 for i in a:
